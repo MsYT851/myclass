@@ -15,12 +15,12 @@ header {
   display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #1b263b;
+  background-color: #0e141f;
 }
 
 .logo {
   font-size: 2rem;
-  color: #9c88ff;
+  color: #ffffff;
   margin-right: auto;
 }
 
@@ -40,7 +40,7 @@ header {
 
 .profile-btn {
   padding: 10px 15px;
-  background-color: #9c88ff;
+  background-color: #221561;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -48,7 +48,7 @@ header {
 }
 
 .profile-btn:hover {
-  background-color: #7f62d1;
+  background-color: #1a123f;
 }
 
 aside nav ul {
@@ -83,8 +83,8 @@ main {
   background-color: #1b263b;
   border-radius: 10px;
   text-align: center;
-  width: 320px;
-  height: 240px;
+  width: 500px;
+  height: 700px;
   cursor: pointer;
   overflow: hidden;
   display: flex;
@@ -96,7 +96,7 @@ main {
 
 .video-card video {
   width: 100%;
-  height: 100%;
+  height: 90%;
   border-radius: 10px;
 }
 
@@ -107,7 +107,7 @@ main {
 }
 
 .video-card:hover {
-  background-color: #9c88ff;
+  background-color: #162031;
   color: #1b263b;
 }
 .video-card {
@@ -266,7 +266,7 @@ button[type="submit"] {
   margin-top: 1em;
   padding: 0.7em;
   width: 100%;
-  background-color: #355c7d;
+  background-color: #304c64;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -344,4 +344,17 @@ body.bright-theme .profile-popup {
 body.bright-theme .settings-container {
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
+}
+
+/*TopBTNS*/
+.top-btn {
+  position: absolute;  /* Positions the button relative to the nearest positioned ancestor (usually the body) */
+  top: 10px;  /* Adjust as needed */
+  right: 10px;  /* Keeps it on the extreme right with a bit of padding from the edge */
+  padding: 10px 20px;
+  background-color: #2f3370;  /* Example background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
