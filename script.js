@@ -34,9 +34,33 @@ document.getElementById('signInForm')?.addEventListener('submit', function(e) {
   const message = document.getElementById('message');
 
   const userDatabase = {
-    "user1@example.com": "password1",
-    "user2@example.com": "password2",
-    "user3@example.com": "password3"
+    "admin@myclass.com": "ms17121234567890",
+    "jen1@myclass.com": "1jen",
+    "kar2@myclass.com": "2kar",
+    "ghi3@myclass.com": "3ghi",
+    "lou4@myclass.com": "4lou",
+    "cha5@myclass.com": "5cha",
+    "nou6@myclass.com": "6nou",
+    "pet7@myclass.com": "7pet",
+    "elenio8@myclass.com": "8elenio",
+    "dan9@myclass.com": "9dan",
+    "10ant@myclass.com": "10ant",
+    "ann11@myclass.com": "11ann",
+    "joh12@myclass.com": "12joh",
+    "geo13@myclass.com": "13geo",
+    "yar14@myclass.com": "14yar",
+    "chl15@myclass.com": "15chl",
+    "gha16@myclass.com": "16gha",
+    "sal17@myclass.com": "17sal",
+    "kme18@myclass.com": "18kme",
+    "lyn19@myclass.com": "19lyn",
+    "ray20@myclass.com": "20ray",
+    "elena21@myclass.com": "21elena",
+    "sas22@myclass.com": "22sas",
+    "eliana23@myclass.com": "23eliana",
+    "joey24@myclass.com": "24joey",
+    "sab26@myclass.com": "26sab",
+    "had27@myclass.com": "27had"
   };
 
   if (userDatabase[email] && userDatabase[email] === password) {
