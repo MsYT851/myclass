@@ -1,0 +1,312 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0d1b2a;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #1b263b;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #9c88ff;
+  margin-right: auto;
+}
+
+#searchBar {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+  margin-right: 15px;
+}
+
+#searchBar:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.profile-btn {
+  padding: 10px 15px;
+  background-color: #9c88ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.profile-btn:hover {
+  background-color: #7f62d1;
+}
+
+aside nav ul {
+  list-style: none;
+  padding: 20px;
+}
+
+aside nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #9c88ff;
+}
+
+aside nav ul li a:hover {
+  background-color: #1b263b;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+.video-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.video-card {
+  padding: 20px;
+  background-color: #1b263b;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  background-color: #9c88ff;
+  color: #1b263b;
+}
+
+/* Profile Popup */
+.popup {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #1b263b;
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+  color: #fff;
+}
+
+/* Success and Error Message Styles */
+.success {
+  color: #4CAF50;
+}
+
+.error {
+  color: #f44336;
+}
+
+/* Bright Theme */
+body.bright-theme {
+  background: #f0f0f0;
+  color: #333;
+}
+
+body.bright-theme .logo {
+  color: #1b263b;
+}
+
+body.bright-theme #searchBar {
+  box-shadow: none;
+}
+
+body.bright-theme header,
+body.bright-theme .profile-btn,
+body.bright-theme .video-card,
+body.bright-theme .popup {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.bright-theme .profile-btn:hover {
+  background-color: #f0f0f0;
+}
+
+body.bright-theme aside nav ul li a {
+  color: #333;
+}
+
+body.bright-theme aside nav ul li a:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+#myFiles, #filesSection {
+  margin: 20px;
+}
+
+.file-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.file-card {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.file-card p {
+  margin: 10px 0;
+}
+
+.file-card a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-top: 8px;
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.file-card a:hover {
+  background-color: #777;
+}
+
+/* Sign-In Container */
+.sign-in-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 2em;
+  background-color: rgba(36, 59, 85, 0.9);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.bright-theme .sign-in-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+/* Form Labels and Inputs */
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+input {
+  width: 90%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  border: 1px solid #5b83a1;
+  border-radius: 5px;
+  color: #333;
+}
+
+/* Input Focus Effect */
+input:focus {
+  outline: none;
+  border-color: #76b3ff;
+  box-shadow: 0 0 8px rgba(118, 179, 255, 0.5);
+}
+
+body.bright-theme input {
+  border-color: #aaa;
+}
+
+/* Sign-In Button Hover Effect */
+button[type="submit"] {
+  margin-top: 1em;
+  padding: 0.7em;
+  width: 100%;
+  background-color: #355c7d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #457b9d;
+  transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+/* Success and Error Messages */
+#message {
+  margin-top: 1em;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#message.success {
+  color: #4CAF50;
+  opacity: 1;
+}
+
+#message.error {
+  color: #F44336;
+  opacity: 1;
+}
+
+/* Profile Popup */
+.profile-popup {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  background-color: #243b55;
+  padding: 1em;
+  border-radius: 8px;
+  color: #fff;
+  width: 200px;
+}
+
+body.bright-theme .profile-popup {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.profile-popup button {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  background-color: #355c7d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Settings Container */ 
+.settings-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 2em;
+  background-color: rgba(36, 59, 85, 0.9);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.bright-theme .settings-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}

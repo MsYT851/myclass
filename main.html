@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyClass - Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <span class="logo">MyClass</span>
+        <input type="text" id="searchBar" placeholder="Search..." oninput="filterVideos()">
+        <button class="profile-btn" onclick="toggleProfilePopup()">Profile</button>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="myfiles.html">My Files</a></li>
+                <li><a href="settings.html">Settings</a></li>
+
+                <div id="filesSection">
+                    <h2>Files</h2>
+                    <div class="file-list" id="fileList"></div>
+                </div>
+
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="video-grid">
+            <div class="video-card" data-title="Video 1">Video 1</div>
+            <div class="video-card" data-title="Video 2">Video 2</div>
+            <div class="video-card" data-title="Video 3">Video 3</div>
+            <div class="video-card" data-title="Video 4">Video 4</div>
+        </div>
+    </main>
+
+    <div id="profilePopup" class="popup">
+        <p>Email: <span id="profileEmail"></span></p>
+        <button onclick="signOut()">Sign Out</button>
+        <button onclick="toggleTheme()">Switch Theme</button>
+    </div>
+</body>
+<footer>
+    <p><h5><center>Credits : Michael Sokhn</center></h5></p>
+</footer>
+</html>

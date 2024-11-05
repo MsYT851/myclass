@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>MyClass - MyFiles</title>
+</head>
+<body>
+  <header>
+      <span class="logo">MyClass</span>
+      <input type="text" id="searchBar" placeholder="Search..." oninput="filterVideos()">
+      <button class="profile-btn" onclick="toggleProfilePopup()">Profile</button>
+  </header>
+  <aside>
+      <nav>
+          <ul>
+              <li><a href="main.html">Home</a></li>
+
+              <div id="filesSection">
+                  <h2>MyFiles</h2>
+                  <div class="file-list" id="fileList"></div>
+                <div id="myFiles">
+                    <form id="uploadForm">
+                        <input type="file" id="fileInput" required>
+                        <input type="email" id="emailInput" placeholder="Your email" required>
+                        <button type="submit">Upload File</button>
+                    </form>
+                </div>
+              </div>
+
+          </ul>
+      </nav>
+  </aside>
+  <main>
+      <div class="video-grid">
+          <div class="video-card" data-title="Video 1">Video 1</div>
+          <div class="video-card" data-title="Video 2">Video 2</div>
+          <div class="video-card" data-title="Video 3">Video 3</div>
+          <div class="video-card" data-title="Video 4">Video 4</div>
+      </div>
+  </main>
+  <div id="profilePopup" class="popup">
+      <p>Email: <span id="profileEmail"></span></p>
+      <button onclick="signOut()">Sign Out</button>
+      <button onclick="toggleTheme()">Switch Theme</button>
+  </div>
+</body>
+</html>
