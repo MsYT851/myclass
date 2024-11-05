@@ -53,19 +53,20 @@ document.getElementById('signInForm')?.addEventListener('submit', function(e) {
   }
 });
 
-// Filter Videos based on Search Bar Input
 function filterVideos() {
   const query = document.getElementById('searchBar').value.toLowerCase();
   const videos = document.querySelectorAll('.video-card');
+
   videos.forEach(video => {
     const title = video.getAttribute('data-title').toLowerCase();
     if (title.includes(query)) {
-      video.style.display = 'block';
+      video.classList.remove('hidden'); // Show the video card
     } else {
-      video.style.display = 'none';
+      video.classList.add('hidden'); // Hide the video card
     }
   });
 }
+
 
 // Display Email on Profile
 window.onload = function() {
